@@ -1,5 +1,30 @@
+# --- DADOS PESSOAIS E CHAVES (SEGURANÇA) ---
+# Ignora qualquer arquivo de banco de dados ou configurações pessoais
+dados.json
+secretkey
+secretkey.txt
+*.bw
+wallet.bw
+wallet_pessoal.bw
+
+# --- COMPILAÇÃO E EXECUTÁVEIS (PYINSTALLER) ---
+# Ignora as pastas que o PyInstaller cria ao gerar o .exe
 dist/
 build/
 *.spec
+
+# --- PYTHON E CACHE ---
+# Ignora arquivos temporários do Python que não servem para outros PCs
 __pycache__/
-dados.json
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+
+# --- EDITORES E SISTEMA ---
+# Ignora configurações do VS Code e arquivos do sistema
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
